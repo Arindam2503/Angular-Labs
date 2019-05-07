@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'my-app',
-  template: `<h1>Hello {{name}}</h1>`,
+    selector: 'my-app',
+    template: `<div>
+                    <h1>{{pageHeader}}</h1>
+                    <my-employee></my-employee>
+                </div>`
 })
-export class AppComponent  {
-
-    name = 'Arindam Saha1';
+export class AppComponent {
+    pageHeader: string = 'Employee Details';
 }
